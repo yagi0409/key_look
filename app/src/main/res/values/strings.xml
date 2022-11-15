@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">KeyLook</string>
     <string name="img_description">Image</string>
-<!--    <string-array name="text_list">-->
-<!--        <item></item>-->
-<!--    </string-array>-->
+    <string name="start">計測開始</string>
+    <string name="measurement">部屋を観察中です</string>
+    <string name="found_items">以下のものが検出されました</string>
+    <string-array name="item_list">
+        <item>雑誌</item>
+        <item>マグカップ</item>
+        <item>フライパン</item>
+    </string-array>
 </resources>

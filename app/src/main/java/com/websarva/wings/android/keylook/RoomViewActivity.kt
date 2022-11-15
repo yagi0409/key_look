@@ -1,26 +1,32 @@
 package com.websarva.wings.android.keylook
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.SpannableString
-import android.text.SpannableStringBuilder
-import android.text.style.BulletSpan
-import androidx.core.content.ContextCompat
+import android.view.View
+import android.widget.Button
 
 class RoomViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_room_view)
+        setContentView(R.layout.activity_main)
 
-//        val text = "aaa"
-//        val spannableStringBuilder = SpannableStringBuilder("")
-//        spannableStringBuilder.append(
-//            text,
-//            context?.let { ContextCompat.getColor(it, R.color.black) }?.let {
-//                BulletSpan(20,it)
-//            },
-//            SpannableString.SPAN_EXCLUSIVE_EXCLUSIVE
-//        )
+        val btStart = findViewById<Button>(R.id.btStart)
+        val listener = RoomListener()
+        btStart.setOnClickListener(listener)
+    }
+
+    private inner class RoomListener: View.OnClickListener{
+        override fun onClick(view: View) {
+
+
+            when(view.id){
+                R.id.btStart -> {
+                    val intentRoomItem = Intent(this@RoomViewActivity, RoomItemActivity::class.java)
+                    startActivity(intentRoomItem)
+                }
+            }
+        }
     }
 
 

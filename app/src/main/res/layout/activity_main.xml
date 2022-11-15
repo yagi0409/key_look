@@ -4,38 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RoomViewActivity">
 
     <ImageView
         android:id="@+id/image"
-        android:src="@drawable/img_1"
-        android:scaleType="fitStart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_height="310dp"
         android:layout_gravity="center_horizontal"
-        android:contentDescription="@string/img_description" />
+        android:contentDescription="@string/img_description"
+        android:scaleType="fitStart"
+        android:src="@drawable/img_1"
+        tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:text="雑誌"
-        app:layout_constraintTop_toBottomOf="@+id/image"/>
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:text="マグカップ"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:text="フライパン"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="143dp"
+        android:layout_height="73dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
