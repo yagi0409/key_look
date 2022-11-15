@@ -4,28 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoomViewActivity">
+    android:background="#BBDEED"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="match_parent"
-        android:layout_height="310dp"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="@string/img_description"
-        android:scaleType="fitStart"
-        android:src="@drawable/img_1"
-        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="332dp"
+        android:layout_height="71dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        android:lineSpacingExtra="24sp"
+        android:text="Key-Look"
+        android:textColor="#7745987B"
+        android:textSize="60sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
 
     <Button
-        android:id="@+id/btStart"
-        android:layout_width="143dp"
-        android:layout_height="73dp"
-        android:text="@string/start"
+        android:id="@+id/button"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="148dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginBottom="215dp"
+        android:onClick="onButtonClick"
+        android:text="Start"
+        android:textColorLink="#14257C"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:backgroundTint="#6672B6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="230dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onButtonClick2"
+        android:text="important 登録"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="69dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Group 6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="278dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_iput__1_" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

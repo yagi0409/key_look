@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">KeyLook</string>
+    <string name="home">Home</string>
+    <string name="tvName">お名前を入力してください</string>
+    <string name="tvEmail">メールアドレスを入力してください</string>
+    <string name="tvPassword">パスワードを入力してください</string>
+    <string name="Registration">登録</string>
+    <string name="Session">ログイン</string>
     <string name="img_description">Image</string>
     <string name="start">計測開始</string>
     <string name="measurement">部屋を観察中です</string>

@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 
-class RoomViewActivity : AppCompatActivity() {
+class SessionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_room_view)
+        setContentView(R.layout.activity_session)
     }
     public override fun onStart() {
         Log.i("keylook", "Main onStart() called.")
@@ -41,14 +41,7 @@ class RoomViewActivity : AppCompatActivity() {
 
     fun onButtonClick(view: View) {
         // インテントオブジェクトを用意。
-        val intent = Intent(this@RoomViewActivity,RoomItemActivity::class.java)
-        // アクティビティを起動。
-        startActivity(intent)
-    }
-
-    fun onButtonClickHome(view: View) {
-        // インテントオブジェクトを用意。
-        val intent = Intent(this@RoomViewActivity,MainActivity::class.java)
+        val intent = Intent(this@SessionActivity, RoomViewActivity::class.java)
         // アクティビティを起動。
         startActivity(intent)
     }
