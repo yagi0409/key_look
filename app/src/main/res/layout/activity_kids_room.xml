@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoomItemActivity">
+    tools:context=".KidsRoomActivity">
 
     <ImageView
         android:id="@+id/image"
@@ -13,37 +13,20 @@
         android:layout_gravity="center_horizontal"
         android:contentDescription="@string/img_description"
         android:scaleType="fitStart"
-        android:src="@drawable/img_1"
+        android:src="@drawable/img_2"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/measurement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/measurement"
-        app:layout_constraintBottom_toTopOf="@+id/found_items"
-        app:layout_constraintTop_toTopOf="@+id/image"
-        app:layout_constraintVertical_bias="0.876"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/found_items"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/found_items"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/list_item"
-        app:layout_constraintTop_toBottomOf="@+id/image" />
-
-
-    <ListView
-        android:id="@+id/list_item"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:entries="@array/item_list"
-        android:layout_marginTop="400dp"
-        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="143dp"
+        android:layout_height="73dp"
+        android:text="@string/start"
+        android:onClick="onButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
 
     <Button
         android:id="@+id/btHome"

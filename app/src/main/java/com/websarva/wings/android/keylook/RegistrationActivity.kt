@@ -40,7 +40,7 @@ class RegistrationActivity : AppCompatActivity() {
     }
     fun onButtonClick(view: View) {
         // インテントオブジェクトを用意。
-        val intent = Intent(this@RegistrationActivity,RoomViewActivity::class.java)
+        val intent = Intent(this@RegistrationActivity,ChoiceActivity::class.java)
         // アクティビティを起動。
         startActivity(intent)
     }

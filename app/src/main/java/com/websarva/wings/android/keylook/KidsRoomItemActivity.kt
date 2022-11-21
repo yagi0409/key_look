@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 
-class SessionActivity : AppCompatActivity() {
+class KidsRoomItemActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_session)
+        setContentView(R.layout.activity_kids_room_item)
     }
     public override fun onStart() {
         Log.i("keylook", "Main onStart() called.")
@@ -39,9 +39,9 @@ class SessionActivity : AppCompatActivity() {
         super.onDestroy()
     }
 
-    fun onButtonClick(view: View) {
+    fun onButtonClickHome(view: View) {
         // インテントオブジェクトを用意。
-        val intent = Intent(this@SessionActivity, ChoiceActivity::class.java)
+        val intent = Intent(this@KidsRoomItemActivity,MainActivity::class.java)
         // アクティビティを起動。
         startActivity(intent)
     }

@@ -13,6 +13,27 @@
         android:theme="@style/Theme.KeyLook"
         tools:targetApi="31">
         <activity
+            android:name=".KidsRoomItemActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".KidsRoomActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChoiceActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SessionActivity"
             android:exported="false">
             <meta-data

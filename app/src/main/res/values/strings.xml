@@ -7,6 +7,7 @@
     <string name="Registration">登録</string>
     <string name="Session">ログイン</string>
     <string name="img_description">Image</string>
+    <string name="question">計測する部屋を選択してください</string>
     <string name="start">計測開始</string>
     <string name="measurement">部屋を観察中です</string>
     <string name="found_items">以下のものが検出されました</string>
@@ -14,5 +15,10 @@
         <item>雑誌</item>
         <item>マグカップ</item>
         <item>フライパン</item>
+    </string-array>
+    <string-array name="item_list2">
+        <item>プラレール</item>
+        <item>ボール</item>
+        <item>大きいおもちゃ</item>
     </string-array>
 </resources>

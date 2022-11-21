@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 
-class SessionActivity : AppCompatActivity() {
+class ChoiceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_session)
+        setContentView(R.layout.activity_choice)
     }
     public override fun onStart() {
         Log.i("keylook", "Main onStart() called.")
@@ -38,10 +38,21 @@ class SessionActivity : AppCompatActivity() {
         Log.i("keylook", "Main onDestory() called.")
         super.onDestroy()
     }
-
-    fun onButtonClick(view: View) {
+    fun onButtonClickRoom1(view: View) {
         // インテントオブジェクトを用意。
-        val intent = Intent(this@SessionActivity, ChoiceActivity::class.java)
+        val intent = Intent(this@ChoiceActivity,KidsRoomActivity::class.java)
+        // アクティビティを起動。
+        startActivity(intent)
+    }
+    fun onButtonClickRoom2(view: View) {
+        // インテントオブジェクトを用意。
+        val intent = Intent(this@ChoiceActivity,RoomViewActivity::class.java)
+        // アクティビティを起動。
+        startActivity(intent)
+    }
+    fun onButtonClickHome(view: View) {
+        // インテントオブジェクトを用意。
+        val intent = Intent(this@ChoiceActivity,MainActivity::class.java)
         // アクティビティを起動。
         startActivity(intent)
     }

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoomItemActivity">
-
+    tools:context=".KidsRoomItemActivity">
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
@@ -13,7 +12,7 @@
         android:layout_gravity="center_horizontal"
         android:contentDescription="@string/img_description"
         android:scaleType="fitStart"
-        android:src="@drawable/img_1"
+        android:src="@drawable/img_2"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -33,15 +32,15 @@
         android:layout_marginTop="30dp"
         android:text="@string/found_items"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/list_item"
+        app:layout_constraintBottom_toTopOf="@+id/list2_item"
         app:layout_constraintTop_toBottomOf="@+id/image" />
 
 
     <ListView
-        android:id="@+id/list_item"
+        android:id="@+id/list2_item"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:entries="@array/item_list"
+        android:entries="@array/item_list2"
         android:layout_marginTop="400dp"
         tools:ignore="MissingConstraints" />
 
